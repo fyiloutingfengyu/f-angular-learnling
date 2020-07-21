@@ -1,0 +1,15 @@
+@import "../../assets/styles/_variables.scss";
+
+.nav-bar {
+  .nav-item {
+    height: 80px;
+    line-height: 80px;
+
+    a {
+      display: block;
+      font-size: 40px;
+      color: $color-primary;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>learning angular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--<script>
+  /*H5页面适配*/
+  (function (doc, win) {
+    let docEl = win.document.documentElement;
+    let resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
+    let maxWidth = 750;
+
+    /**
+     * 设置根元素font-size
+     * 当设计稿宽度为750px的时候，根元素font-size:100px;
+     */
+    function refreshRem() {
+      let clientWidth = doc.documentElement.clientWidth || doc.body.clientWidth;
+
+      if (!clientWidth) {
+        return;
+      }
+
+      if (clientWidth <= maxWidth) {
+        docEl.style.fontSize = 100 * clientWidth / maxWidth + 'px';
+      } else {
+        docEl.style.fontSize = '100px';
+      }
+    }
+
+    refreshRem();
+
+    if (!doc.addEventListener) {
+      return;
+    }
+
+    win.addEventListener(resizeEvent, refreshRem, false);
+    doc.addEventListener('DOMContentLoaded', refreshRem, false);
+  })(document, window);
+  </script>-->
+</head>
+<body>
+<app-root></app-root>
+</body>
+</html>
