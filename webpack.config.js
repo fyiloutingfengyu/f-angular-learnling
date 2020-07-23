@@ -19,7 +19,9 @@ const postcssLoader = {
         minPixelValue: 1, // 小于或等于`1px`不转换为视窗单位，你也可以设置为你想要的值
         mediaQuery: false // 允许在媒体查询中转换`px`
       }),
-      require('autoprefixer')({
+      // angular-cli自带的已经.browserslistrc已经集成了autoprefixer
+      // https://angular.cn/guide/build
+      /*require('autoprefixer')({
         overrideBrowserslist: [
           "Android 4.1",
           "iOS 7.1",
@@ -28,7 +30,7 @@ const postcssLoader = {
           "ie >= 8"
         ],
         grid: true
-      }),
+      }),*/
     ]
   }
 };

@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FirstService} from './first.service';
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-first',
@@ -12,7 +12,7 @@ export class FirstComponent implements OnInit {
     public userInfo = {name: '', age: 15}
 
 
-    constructor(private userService: FirstService, public router: Router) {
+    constructor(private userService: FirstService, private router: Router) {
     }
 
     ngOnInit(): void {

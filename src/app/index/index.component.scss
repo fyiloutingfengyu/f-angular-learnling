@@ -1,9 +1,14 @@
 @import "../../assets/styles/_variables.scss";
 
 .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   .nav-item {
     height: 80px;
     line-height: 80px;
+    transform:rotate(30deg);
 
     a {
       display: block;
