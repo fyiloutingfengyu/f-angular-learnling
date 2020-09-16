@@ -4,8 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build-cnd": "ng build --deployUrl=https://test.com/",
+    "build": "ng build --prod",
+    "build-cdn": "ng build --prod --deployUrl=https://fyudeyinji.cnd.com/",
+    "test-build": "ng build --configuration=test",
+    "test-build-cdn": "ng build --configuration=test --deployUrl=https://test.fyudeyinji.cnd.com/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
