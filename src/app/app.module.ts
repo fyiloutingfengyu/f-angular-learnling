@@ -1,25 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgZorroAntdMobileModule } from 'ng-zorro-antd-mobile';
-import { AppRoutingModule } from './app-routing.module';
+// import { NgZorroAntdMobileModule } from 'ng-zorro-antd-mobile';
+import { RoutesModule } from './routes/routes.module';
 import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
-import { IndexComponent } from './index/index.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    FirstComponent,
-    SecondComponent,
-    IndexComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    NgZorroAntdMobileModule,
-    AppRoutingModule
+    // NgZorroAntdMobileModule,
+    RoutesModule,
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

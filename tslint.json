@@ -69,7 +69,8 @@
       "ignore-params"
     ],
     "no-non-null-assertion": true,
-    "no-redundant-jsdoc": true,
+    // 关闭tslint提示JSDoc的注释是多余的提示
+    "no-redundant-jsdoc": false,
     "no-switch-case-fall-through": true,
     "no-var-requires": false,
     "object-literal-key-quotes": [

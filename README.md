@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+项目文件夹描述
+app下项目目录描述：
+    common放公共的请求拦截、接口、配置文件等
+    routes放页面路由文件
+    shared存放公共的组件、指令、服务等共享模块
+    
+
+
+
+
