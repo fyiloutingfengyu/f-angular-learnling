@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { NgZorroAntdMobileModule } from 'ng-zorro-antd-mobile';
 import { RoutesModule } from './routes/routes.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
@@ -12,7 +11,6 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    // NgZorroAntdMobileModule,
     RoutesModule,
     FormsModule,
     RouterModule
