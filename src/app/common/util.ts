@@ -270,6 +270,9 @@ const compressImage = (self: any, img: HTMLImageElement, orientation: number | s
   }
 };
 
+
+
+
 export {
   dateFormat,
   getLocalStorage,

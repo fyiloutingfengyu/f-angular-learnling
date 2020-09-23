@@ -1,15 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../../environments/environment';
+import { IndexService } from './index.service';
+import { RequestService } from '../../common/http-interceptors/request.service';
+import { ToastService } from 'ng-zorro-antd-mobile';
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss']
+  styleUrls: ['./index.component.scss'],
+  providers: [IndexService, RequestService, ToastService]
 })
 export class IndexComponent implements OnInit {
   envObj = environment;
   name = '选择';
   value = new Date();
+  form = {
+    name: 'test'
+  };
+
+  constructor(private indexService: IndexService, private toast: ToastService, private $http: RequestService) {
+  }
 
   ngOnInit(): void {
 
@@ -31,18 +41,10 @@ export class IndexComponent implements OnInit {
     this.value = result;
   }
 
-  formatIt(date: Date, form: string): string {
-    const pad = (n: number) => (n < 10 ? `0${ n }` : n);
-    const dateStr = `${ date.getFullYear() }-${ pad(date.getMonth() + 1) }-${ pad(date.getDate()) }`;
-    const timeStr = `${ pad(date.getHours()) }:${ pad(date.getMinutes()) }`;
-    if (form === 'YYYY-MM-DD') {
-      return dateStr;
-    }
-    if (form === 'HH:mm') {
-      return timeStr;
-    }
-    return `${ dateStr } ${ timeStr }`;
+  testFun(): void {
+    this.indexService.test(this.form).subscribe(res => {
+      console.log(res);
+    });
   }
-
 
 }

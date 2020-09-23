@@ -4,7 +4,7 @@
     <li class="nav-item"><a routerLink="/second-component">Second Component</a></li>
   </ul>
 </nav>
-<div> {{ envObj.production }}</div>
+<div (click)="testFun()"> {{ envObj.production }}</div>
 
 <List [className]="'date-picker-list'">
   <ListItem
